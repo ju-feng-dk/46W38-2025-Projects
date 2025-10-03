@@ -55,14 +55,14 @@ Here is a table of relevant parameter values for Turbie. These values are held i
 |---------------|--------------------------------------------- |--------------------|
 | $m_b$         | Mass of a single blade                       | 41 metric tons     |
 | $m_n$         | Mass of the nacelle                          | 446 metric tons    |
-| $ m_t$        | Mass of the tower                            | 628 metric tons    |
-| $ m_h$        | Mass of the hub                              | 105 metric tons    |
-| $ c_1$        | Equivalent damping of the blades             | 4208 N/(m/s)       |
-| $ c_2$        | Equivalent damping of the nacelle, hub, tower| 12730 N/(m/s)      |
-| $ k_1$        | Equivalent stiffness of the blades           | 1711000 N/m        |
-| $ k_2$        | Equivalent stiffness of the nacelle, hub, tower | 3278000 N/m     |
-| $ D_{\text{rotor}}$ | Rotor diameter                         | 180 m              |
-| $ \rho$       | Air density                                  | 1.22 kg/m $^3$     |
+| $m_t$        | Mass of the tower                            | 628 metric tons    |
+| $m_h$        | Mass of the hub                              | 105 metric tons    |
+| $c_1$        | Equivalent damping of the blades             | 4208 N/(m/s)       |
+| $c_2$        | Equivalent damping of the nacelle, hub, tower| 12730 N/(m/s)      |
+| $k_1$        | Equivalent stiffness of the blades           | 1711000 N/m        |
+| $k_2$        | Equivalent stiffness of the nacelle, hub, tower | 3278000 N/m     |
+| $D_{\text{rotor}}$ | Rotor diameter                         | 180 m              |
+| $\rho$       | Air density                                  | 1.22 kg/m $^3$     |
 
 # Dynamical Equations
 A wind turbine is, as you might expect, forced by the wind. To accurately model aerodynamics, you should include extra time-dependent variables to include phenomena such as dynamic stall, tower shadow, variable turbine speed, etc. For simplicity, we make the following assumptions:
