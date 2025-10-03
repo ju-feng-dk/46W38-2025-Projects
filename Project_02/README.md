@@ -139,7 +139,7 @@ Your task for this project is to build a Turbie module within Python housing the
 
 The functions within the Turbie module should enable the:
 * Importing of the wind file data;
-* Determination of the $C_T$ at each wind speed time step, via interpolation with the wind speed-$C_T$ look-up table found in C_T.txt;
+* Determination of the $C_T$ at each wind speed time step, via interpolation with the wind speed vs. $C_T$ look-up table found in C_T.txt;
 * Building of the Turbie system matrices ($\mathbf{M}$, $\mathbf{K}$ and $\mathbf{C}$) based on the values within the turbie_parameters.txt;
 * Calculation of $\bar{y}'(t)$.
 
