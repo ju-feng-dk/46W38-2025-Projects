@@ -74,7 +74,7 @@ A wind turbine is, as you might expect, forced by the wind. To accurately model 
 With these assumptions, the aerodynamic forcing on the blades is given by:
 
 $$
-f_{aero}(t) = \tfrac{1}{2} \rho C_T A \, \big(u(t) - \dot{x}_1\big)\, \big|u(t) - \dot{x}_1\big|,
+f_{aero}(t) = \tfrac{1}{2} \rho C_T A \cdot \big(u(t) - \dot{x}_1\big) \cdot \big|u(t) - \dot{x}_1\big|,
 $$
 
 where $A$ is the rotor area and $u(t)$ is the wind speed at time $t$. The thrust coefficient $C_T$ is determined from the mean wind speed $U = u(t)$ using the look-up table defined in **C_T.txt**.
@@ -109,7 +109,7 @@ $$
 \mathbf{M}\ddot{\bar{x}}(t) + \mathbf{C}\dot{\bar{x}}(t) + \mathbf{K}\bar{x}(t) = \bar{F}(t),
 $$
 
-and define a new vector $\bar{y}(t) = \begin{bmatrix}\bar{x}(t), \dot{\bar{x}}(t)\end{bmatrix}^T$, called a state vector. This vector is 4 elements long for Turbie because it contains both the displacements and the velocities for the blades and tower. In this case, it can be shown that:
+and define a new vector $\bar{y}(t) = [\bar{x}(t), \dot{\bar{x}}(t)]^T$, called a state vector. This vector is 4 elements long for Turbie because it contains both the displacements and the velocities for the blades and tower. In this case, it can be shown that:
 
 $$
 {\bar{y}}'(t) =
