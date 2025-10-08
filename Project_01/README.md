@@ -58,6 +58,7 @@ ratio of generated power to the rated power. We can consider two ways of
 computing this ratio by using different interpolation methods.
 
 If linear interpolation is used, $g(v)$ takes the following form:
+
 $$
 \begin{equation}
 g(v) = (v-v_{in})/(v_{rated}-v_{in}) 
