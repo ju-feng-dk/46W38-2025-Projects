@@ -72,9 +72,11 @@ Linear regression models the relationship between features and target using a
 linear equation:  
 
 **Model Equation**:  
+
 $$
 \hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 $$  
+
 - $\hat{y}$: Predicted power  
 - $\beta_0$: Intercept (bias term)  
 - $\beta_1, \beta_2, \dots, \beta_n$: Coefficients for features $x_1, x_2, \dots, x_n$  
@@ -166,22 +168,28 @@ periods.
 ### 5. **Error Metrics and Equations**
 Evaluate regression performance using:  
 
-#### **Mean Squared Error (MSE)**  
+#### **Mean Squared Error (MSE)**
+
 $$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
 $$  
+
 - Penalizes large errors quadratically.  
 
 #### **Mean Absolute Error (MAE)**  
+
 $$
 \text{MAE} = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|
 $$  
+
 - Represents average absolute error (robust to outliers).  
 
 #### **Root Mean Squared Error (RMSE)**  
+
 $$
 \text{RMSE} = \sqrt{\text{MSE}}
 $$  
+
 - Interpretable in target variable units (e.g., kW for power).  
 
 **Calculation Code**:
