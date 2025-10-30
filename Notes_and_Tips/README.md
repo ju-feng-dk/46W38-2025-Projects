@@ -21,3 +21,6 @@ Currently, we have:
 
 6. [**Organize a Python Package with `pyproject.toml` and `__init__.py`**](
 6_note_on_packaging.md)
+
+6. [**Dynamic System Simulation with Python**](
+7_note_on_dynamic_system_simulation.md)
