@@ -22,7 +22,7 @@ this note to learn how to do it: [Note on packaging](https://github.com/ju-feng-
 **Due date of Project 3: 2025-Dec-5, 11:59 PM**
 
 
-### Pre-defined final projects
+## Pre-defined final projects
 We provide three pre-defined final projects for you to choose, but you may also
 submit a request for a different project if you have an idea you would
 like to pursue.
@@ -42,11 +42,11 @@ Introductions and details on these projects can be found in the respective
 sub-folders.
 
 
-### Requirements to pass
+## Requirements to pass
 1. Your final project should have the structure and required files as shown in 
 the following diagram:
    ```
-   Final_project_46W38
+   Project03_46W38
    ├── inputs/
    │   ├── data_files_we_provide
    │   └── data_files_you_found (optional)
@@ -87,11 +87,15 @@ executed.
 results (like plots) in a reasonable time (less than 10 mins). If needed,
 define a "demo" mode and/or use saved intermediate results.
 
-7. Test coverage on your package should be higher than 70%, as evaluated using
+
+## Good to have features of your code
+* Test coverage on your module/package should be higher than 70%, as evaluated using
 `pytest-cov` on your `src` folder, i.e., by running:
    ```
    pytest --cov=src tests/
    ```
+
+* You have implemented extra functions beyond the required ones.
 
 
 ## Custom project
@@ -117,3 +121,30 @@ should be openly accessible.
 6. To get approval for your custom project idea, you need to send an email to
 Ju Feng before midnight on Wednesday, April 9, including a document explaining 
 the above points.  
+
+
+
+# How to hand-in
+
+Create a repository named Project03_46W38 on GitHub. The owner should be you. Note also the following:
+
+* Add a proper description.
+* Choose visibility: Public or Private. (You may choose to make it only public after you hand-in or public since the beginning.)
+* Start with a template: No template.
+* Add .gitignore: Python
+* Add license: choose a license you want (like MIT license).
+* Add README.
+* Inside this repository, organize the code according the folder structure as 
+stated in this documentation.
+
+Write code incrementally and using Git to do version control. **You commit
+history will be considered in the final grading.**
+
+When you are satisfied with your code, please send us a link of your repository 
+before the hand-in deadline. 
+
+You also need to write a small report (maximal 3
+pages) for this project and send it to us before the deadline.
+
+**Note: There will be no extension for this project, as the week after the 
+hand-in date we will have oral exams.**
