@@ -121,7 +121,7 @@ $$
 \begin{bmatrix}
 0 
 \\ 
--\mathbf{M}^{-1}\bar{F}(t)
+\mathbf{M}^{-1}\bar{F}(t)
 \end{bmatrix},
 $$
 
