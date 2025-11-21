@@ -27,16 +27,16 @@ Where:
 - $c$ = damping coefficient (N·s/m)
 - $k$ = spring constant (N/m)
 - $F(t)$ = external force (N)
-- $ x(t) $ = position (m)
-- $ \dot{x}(t) $ = velocity (m/s)
-- $ \ddot{x}(t) $ = acceleration (m/s²)
+- $x(t)$ = position (m)
+- $\dot{x}(t)$ = velocity (m/s)
+- $\ddot{x}(t)$ = acceleration (m/s²)
 
 ### Physical Interpretation
-- **Spring force**: $ -kx $ (restoring force proportional to 
+- **Spring force**: $-kx$ (restoring force proportional to 
 displacement)
-- **Damper force**: $ -c\dot{x} $ (dissipative force proportional to 
+- **Damper force**: $-c\dot{x}$ (dissipative force proportional to 
 velocity)
-- **External force**: $ F(t) $ (driving force applied to the system)
+- **External force**: $F(t)$ (driving force applied to the system)
 
 ## Methodology
 
@@ -169,15 +169,15 @@ if __name__ == "__main__":
 ### Case 1: Free Vibration
 
 **System Parameters:**
-- Mass ($ m $): 1.0 kg
-- Damping ($ c $): 0.2 N·s/m  
-- Stiffness ($ k $): 2.0 N/m
+- Mass ($m$): 1.0 kg
+- Damping ($c$): 0.2 N·s/m  
+- Stiffness ($k$): 2.0 N/m
 - Initial displacement: 1.0 m
 - Initial velocity: 0.0 m/s
 
 **Expected Behavior:**
-- Natural frequency: $ \omega_n = \sqrt{\frac{k}{m}} = \sqrt{2} \approx 1.414 $ rad/s
-- Damping ratio: $ \zeta = \frac{c}{2\sqrt{mk}} = \frac{0.2}{2\sqrt{2}} \approx 0.071 $ (underdamped)
+- Natural frequency: $\omega_n = \sqrt{\frac{k}{m}} = \sqrt{2} \approx 1.414$ rad/s
+- Damping ratio: $\zeta = \frac{c}{2\sqrt{mk}} = \frac{0.2}{2\sqrt{2}} \approx 0.071$ (underdamped)
 - The system should exhibit oscillatory behavior with exponential decay
 
 **Observations:**
@@ -189,24 +189,25 @@ From the result we can observe:
 - The position plot shows decaying oscillations
 - The velocity leads the position by 90 degrees phase
 - Amplitude decreases exponentially due to energy dissipation in the damper
-- System exhibits underdamped behavior characteristic of $ \zeta < 1 $
+- System exhibits underdamped behavior characteristic of $\zeta < 1$
 
 ### Case 2: Forced Vibration
 
 **External Force:**
+
 $$ 
 F(t) = 5.0 \cdot \sin(2\pi \cdot 0.5 \cdot t) = 5.0 \cdot \sin(\pi t) 
 $$
 
 - Amplitude: 5.0 N
-- Frequency: 0.5 Hz ($ \omega = \pi $ rad/s)
+- Frequency: 0.5 Hz ($\omega = \pi$ rad/s)
 
 If you plot out the results of Case 2, it will be like the following:
 
 !['Mass-Spring-Damper System With External Force'](figures/mass_spring_damper_with_force.png "Plot of Case 2")
 
 **Analysis:**
-- Driving frequency (0.5 Hz) is different from natural frequency ($ \approx 0.225 $ Hz)
+- Driving frequency (0.5 Hz) is different from natural frequency ($\approx 0.225$ Hz)
 - System shows combined transient and steady-state response
 - Initially dominated by natural frequency response
 - Eventually synchronizes with driving frequency
@@ -215,21 +216,21 @@ If you plot out the results of Case 2, it will be like the following:
 ### Key Physical Insights
 
 1. **Energy Conservation**: In free vibration, mechanical energy 
-converts between potential ($ \frac{1}{2}kx^2 $) and kinetic (
-$ \frac{1}{2}m\dot{x}^2 $) forms, with gradual dissipation through damping.
+converts between potential ($\frac{1}{2}kx^2$) and kinetic (
+$\frac{1}{2}m\dot{x}^2$) forms, with gradual dissipation through damping.
 
 2. **Resonance**: If the driving frequency matched the natural 
-frequency $ \omega = \omega_n $, we would observe resonance with much larger amplitudes.
+frequency $\omega = \omega_n$, we would observe resonance with much larger amplitudes.
 
 3. **Phase Relationships**: 
-   - Velocity leads position by $ 90^\circ $
-   - Acceleration leads velocity by $ 90^\circ $
-   - In forced vibration, the phase between force and response depends on frequency ratio $ \frac{\omega}{\omega_n} $
+   - Velocity leads position by$ 90^\circ$
+   - Acceleration leads velocity by $90^\circ$
+   - In forced vibration, the phase between force and response depends on frequency ratio $\frac{\omega}{\omega_n}$
 
 4. **Damping Effects**:
-   - Critical damping ($ \zeta = 1 $): No oscillations, fastest return to equilibrium
-   - Underdamping ($ \zeta < 1 $): Oscillatory decay (our case)
-   - Overdamping ($ \zeta > 1 $): Slow non-oscillatory return
+   - Critical damping ($\zeta = 1$): No oscillations, fastest return to equilibrium
+   - Underdamping ($\zeta < 1$): Oscillatory decay (our case)
+   - Overdamping ($\zeta > 1$): Slow non-oscillatory return
 
 ## Conclusion
 
